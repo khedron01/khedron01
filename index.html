@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>How to make a calender in html</title>
+</head>
+<style>
+	a:link {color:#000000;} /*unvisited link*/
+a:visited {color:#000000;} /*visited link*/
+a:hover {color:#81d50d;} /*mouse over link*/
+a:active {color:#81d50d;} /*selected link*/
+
+#fancytable1 { /*Main table layout for calendar*/
+
+border-top-left-radius:15px 15px; /*Top left rounded corner of calendar*/
+-moz-border-radius-topleft:15px 15px; /*Top left rounded corner of calendar*/
+border-radius-topleft:15px 15px; /*Top left rounded corner of calendar*/
+border-top-right-radius:15px 15px; /*Top right rounded corner of calendar*/
+-moz-border-radius-topright:15px 15px; /*Top right rounded corner of calendar*/
+border-radius-topright:15px 15px; /*Top right rounded corner of calendar*/
+
+font-family: Arial, Helvetica, sans-serif; /*Font style for calendar*/
+color: #00FFE2; /*Days of week text color*/
+border-collapse:collapse; /*Removes border padding between calendar days*/
+width:360px; /*Calendar Width*/
+height: 590px; /*Calender Height*/
+
+}
+
+#fancytable1 th { /*Main calendar month title*/
+
+padding:7px; /*Month title padding*/
+border-top-left-radius:15px 15px; /*Rounded top left corner*/
+-moz-border-radius-topleft:15px 15px; /*Rounded top left corner*/
+border-radius-topleft:15px 15px; /*Rounded top left corner*/
+border-top-right-radius:15px 15px; /*Rounded top right corner*/
+-moz-border-radius-topright:15px 15px; /*Rounded top right corner*/
+border-radius-topright:15px 15px; /*Rounded top right corner*/
+
+font-size: 1.9em; /*Month title font size*/
+text-align: center; /*Centers month title*/
+
+background: -moz-linear-gradient(bottom, #666666, #222222); /*Background gradient of Month title*/
+background: -webkit-linear-gradient(top, #666666, #222222); /*Background gradient of Month title*/
+background: -o-linear-gradient(top, #666666,#222222); /*Background gradient of Month title*/
+background: linear-gradient(top, #666666, #222222); /*Background gradient of Month title*/
+
+color: #80FF00; /*Month title color*/
+text-shadow: 2px 2px 2px #222222; /*Month title text shadow*/
+
+}
+
+#fancytable1 tr.alt1 td { /*Days of week Sunday through Saturday*/
+
+padding:5px; /*Days of week cell padding*/
+
+font-size: 1.5em; /*Days of week font size*/
+text-align: center; /*Days of week text alignment*/
+
+background: -moz-linear-gradient(bottom, #666666, #222222); /*Background gradient for Days of week*/
+background: -webkit-linear-gradient(top, #666666, #222222); /*Background gradient for Days of week*/
+background: -o-linear-gradient(top, #666666,#222222); /*Background gradient for Days of week*/
+background: linear-gradient(top, #666666, #222222); /*Background gradient for Days of week*/
+
+color: #81d50d; /*Days of week text color*/
+text-shadow: 2px 2px 2px #222222; /*Days of week text shadow*/
+
+}
+
+#fancytable1 tr.alt2 td { /*Bottom bar with url*/
+
+padding:5px; /*Bottom bar with url cell padding*/
+
+border-bottom-left-radius:15px 15px; /*Bottom bar with url left rounded corner*/
+-moz-border-radius-bottomleft:15px 15px; /*Bottom bar with url left rounded corner*/
+border-radius-bottomleft:15px 15px; /*Bottom bar with url left rounded corner*/
+border-bottom-right-radius:15px 15px; /*Bottom bar with url right rounded corner*/
+-moz-border-radius-bottomright:15px 15px; /*Bottom bar with url right rounded corner*/
+border-radius-bottomright:15px 15px; /*Bottom bar with url right rounded corner*/
+
+font-size: .75em; /*Bottom bar with url font size*/
+text-align: center; /*Bottom bar with url text alignment*/
+
+background: -moz-linear-gradient(bottom, #666666, #222222); /*Background gradient bottom bar with url*/
+background: -webkit-linear-gradient(top, #666666, #222222); /*Background gradient bottom bar with url*/
+background: -o-linear-gradient(top, #666666,#222222); /*Background gradient bottom bar with url*/
+background: linear-gradient(top, #666666, #222222); /*Background gradient bottom bar with url*/
+
+color: #81d50d; /*Bottom bar with url text color*/
+text-shadow: 2px 2px 2px #222222; /*Bottom bar with url text shadow*/
+
+}
+
+#fancytable1 td { /*Day numbers 1 through 31*/
+
+padding:5px; /*Day numbers cell padding*/
+background-color:#f0f0f0; /*Day numbers background color*/
+font-size: 1em; /*Day numbers font size*/
+text-align: center; /*Day numbers text alignment*/
+
+}
+
+#fancytable1 tr.alt td { /*Calendar day numbers area*/
+
+background-color: cccccc; /*Calendar day numbers area background color*/
+
+}
+
+#fancytable1 tr:hover td { /*Hover row bar over day numbers 1 through 31*/
+
+background: -moz-linear-gradient(bottom, #666666, #222222) !important; /*Hover row bar background color*/
+background: -webkit-linear-gradient(top, #666666, #222222); /*Hover row bar background color*/
+background: -o-linear-gradient(top, #666666,#222222); /*Hover row bar background color*/
+background: linear-gradient(top, #666666, #222222); /*Hover row bar background color*/
+color:#81d50d; /*Hover row bar text color*/
+text-shadow: 2px 2px 2px #222222; /*Hover row bar text shadow*/
+
+}
+
+</style>
+<body>
+<table align="center" id="fancytable1">
+
+<tr>
+<th colspan="7">August</th>
+</tr>
+
+<tr class=alt1>
+<td>Su</td>
+<td>Mo</td>
+<td>Tu</td>
+<td>We</td>
+<td>Th</td>
+<td>Fr</td>
+<td>Sa</td>
+</tr>
+
+<tr>
+<td height="35">1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+
+<tr>
+<td height="35">8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+
+<tr>
+<td height="35">15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+
+<tr>
+<td height="35">22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+
+<tr>
+<td height="35">29</td>
+<td>30</td>
+<td>31</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+
+</table>
+
+<script>
+// This function changes the name of the month automatically
+function change month() {
+document.getElementById("result").value="month";
+}
+
+// This function displays day automatically
+function display day() {
+	document.getElementById("result").value="day"
+	}
+	
+	// This finction enables the user to swipe into the next month
+function swipe calender() {
+	document.getElementById("result").value="next month"
+	}
+</script>
+</body>
+</html>
